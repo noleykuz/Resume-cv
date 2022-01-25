@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+	background: linear-gradient(gray, #080710);
+	background-repeat: no-repeat;
+}
+
+.resume{
+	width: 800px;
+	background: rgb(212, 210, 210);
+	margin: 25px auto;
+	display: flex;
+}
+
+.left{
+	background: rgba(201, 112, 24, 0.133);
+	width: 250px;
+	padding: 0 20px;
+}
+
+.right{
+	width: calc(100% - 250px);
+}
+
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 202px;
+	height: 190px;
+	border-radius: 100px;
+}
+
+.pb{
+	padding-bottom: 10px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	padding-bottom: 10px;
+	color: #131313;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 90px;
+	height: 3px;
+	background: #1b1b1b;
+}
+
+.left .icon{
+	font-size: 20px;
+	color: #322880;
+}
+
+.left .text{
+	color: #020202;
+	text-transform:capitalize;
+	font-size: 14px;
+}
+
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 65px;
+	height: 70px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills .li_wrap{
+	background: #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #9153c9;
+}
+
+.skills-section ul{
+    padding-top: 2rem;
+}
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .2rem 0;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 57%;
+    background-color: #f7f9fc5b;
+    position: relative;
+    border-radius: 2px;
+}
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(12, 9, 58);
+    border-radius: 2px;
+}
+.js-progress{
+    width: 90%;
+}
+.ps-progress{
+    width: 90%;
+}
+.j-progress{
+    width: 75%;
+}
+.c-progress{
+    width: 80%;
+}
+.n-progress{
+    width: 83%;
+}
+.w-progress{
+    width: 87%;
+}
+
+
+.skill-title{
+    text-transform: capitalize;
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+
+
+
+
+.header{
+	background: #292b2f;
+	padding: 15px 30px;
+	color: #fff;
+	height: 240px;
+}
+
+.header .name{
+	font-size: 33px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #f6f6f8;
+}
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+.right_inner{
+	padding: 30px;
+	color: #292b2f;
+}
+
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #915;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #915;
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #322880;
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #080710;
+}
